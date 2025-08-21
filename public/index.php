@@ -1,7 +1,9 @@
 <?php
-require '../vendor/autoload.php';
-
-use Application\Hello;
+$nome = $_GET['nome'];
+$nome01 ="leonardo";
+$mensagem = "boa noite $nome01";
+$num01 = 10;
+$num02 = 20;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,6 +14,10 @@ use Application\Hello;
 </head>
 <body>
     <h1>PHP & Mysql</h1>
-    <p><?= Hello::message() ?></p>
+    <h1> Teste</h1>
+    <h1> Ola mundo</h1>
+    <p><?= $mensagem ?></p>
+    <p><?= $num01 + $num02 ?></p>
+    <p><?= $num01.$num02 ?></p> <!--concatenação -->
 </body>
 </html>
